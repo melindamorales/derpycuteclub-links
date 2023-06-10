@@ -4,6 +4,10 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      content: {
+        duggyLeftSide: 'url("./pics/duggywave-leftside.png")',
+        duggyRightSide: 'url("./pics/duggywave-rightside.png")',
+      },
       animation: {
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
