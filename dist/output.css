@@ -783,10 +783,6 @@ h1{
   display: none;
 }
 
-.h-1{
-  height: 0.25rem;
-}
-
 .h-16{
   height: 4rem;
 }
@@ -799,8 +795,8 @@ h1{
   height: 100vh;
 }
 
-.w-1{
-  width: 0.25rem;
+.max-h-96{
+  max-height: 24rem;
 }
 
 .w-full{
@@ -2436,14 +2432,16 @@ h1{
 .linktwee-container{
   display: flex;
   height: 100%;
-  width: 50%;
+  width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .linktwee-box{
   position: relative;
   display: flex;
+  max-width: -moz-min-content;
+  max-width: min-content;
   flex: 1 1 0%;
   flex-direction: column;
   justify-content: center;
@@ -2463,16 +2461,6 @@ h1{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 3rem;
-}
-
-.linktwee-container::before {
-  content: url("../pics/duggywave-leftside.png");
-  zoom: 10%;
-}
-
-.linktwee-container::after {
-  content: url("../pics/duggywave-rightside.png");
-  zoom: 10%;
 }
 
 @media (min-width: 640px){
@@ -2509,11 +2497,6 @@ h1{
       max-width: 1536px;
     }
   }
-}
-
-.before\:content-duggyLeftSide::before{
-  --tw-content: url("../pics/duggywave-leftside.png");
-  content: var(--tw-content);
 }
 
 .hover\:font-bold:hover{
