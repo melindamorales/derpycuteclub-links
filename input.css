@@ -11,9 +11,17 @@
 }
 
 .linktwee-container {
-  @apply w-full flex justify-between items-center h-full;
+  @apply w-full flex justify-center flex-col lg:flex-row lg:justify-between items-center h-full;
 }
 
 .linktwee-box {
   @apply relative flex flex-1 flex-col justify-center max-w-min border-8 border-black rounded-[48px] p-12 bg-white space-y-4;
+}
+
+.duggywave-side-img {
+  @apply max-h-96 hidden lg:block;
+}
+
+.duggy-frontview-img {
+  @apply max-h-80 hidden max-lg:block;
 }
