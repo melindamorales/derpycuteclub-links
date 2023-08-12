@@ -15,7 +15,7 @@
 }
 
 .linktwee-box {
-  @apply relative flex flex-1 flex-col justify-center max-w-min border-8 border-black rounded-[48px] p-12 bg-white space-y-4;
+  @apply relative flex flex-col justify-center max-w-min border-8 border-black rounded-[48px] p-10 bg-white space-y-4;
 }
 
 .duggywave-side-img {
@@ -23,5 +23,17 @@
 }
 
 .duggy-frontview-img {
-  @apply max-h-80 hidden max-lg:block;
+  @apply max-h-40 hidden max-lg:block;
+}
+
+.marquee1-container {
+  @apply pt-1 pb-2 lg:py-4 animate-marquee whitespace-nowrap;
+}
+
+.marquee2-container {
+  @apply absolute top-0 pt-1 pb-2 lg:py-4 animate-marquee2 whitespace-nowrap;
+}
+
+.marquee-text {
+  @apply text-3xl lg:text-4xl m-0 font-bold;
 }
