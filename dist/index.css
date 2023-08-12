@@ -2401,8 +2401,6 @@ h1{
 .linktwee-box{
   position: relative;
   display: flex;
-  max-width: -moz-min-content;
-  max-width: min-content;
   flex-direction: column;
   justify-content: center;
 }
