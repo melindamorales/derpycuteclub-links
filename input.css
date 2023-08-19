@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Ranchers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +6,7 @@
 @layer base {
   h1 {
     @apply font-bold leading-relaxed text-center;
-    font-family: "Ranchers", "sans-serif";
+    font-family: "Playfair Display", "sans-serif";
   }
 }
 
@@ -14,9 +14,21 @@
   @apply w-full flex justify-center flex-col lg:flex-row lg:justify-between items-center h-full;
 }
 
-.linktwee-box {
-  @apply relative flex flex-col justify-center border-8 border-black rounded-[48px] p-10 bg-white space-y-4;
+.linktwee-box-container {
+  @apply w-full max-w-md px-4;
 }
+
+.linktwee-box {
+  @apply relative flex flex-col justify-center w-full border-8 border-black rounded-[48px] p-10 bg-white space-y-4;
+}
+
+/* linktwee buttons */
+
+.linktwee-button-text {
+  @apply text-xl font-bold text-center tracking-wide;
+}
+
+/* images */
 
 .duggywave-side-img {
   @apply max-h-96 hidden lg:block;
@@ -25,6 +37,8 @@
 .duggy-frontview-img {
   @apply max-h-40 hidden max-lg:block;
 }
+
+/* marquee */
 
 .marquee1-container {
   @apply pt-1 pb-2 lg:py-4 animate-marquee whitespace-nowrap;
@@ -36,4 +50,5 @@
 
 .marquee-text {
   @apply text-3xl lg:text-4xl m-0 font-bold;
+  font-family: "Playfair Display", "sans-serif";
 }
