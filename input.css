@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   h1 {
-    @apply font-bold leading-relaxed text-center;
-    font-family: "Playfair Display", "sans-serif";
+    @apply font-bold leading-relaxed tracking-tight lowercase text-center;
+    font-family: "M PLUS Rounded 1c", "sans-serif";
   }
 }
 
@@ -40,15 +41,19 @@
 
 /* marquee */
 
-.marquee1-container {
+.marquee-container {
+  @apply relative flex flex-none overflow-x-hidden w-full border-y-8 border-black select-none;
+}
+
+.marquee1-content {
   @apply pt-1 pb-2 lg:py-4 animate-marquee whitespace-nowrap;
 }
 
-.marquee2-container {
+.marquee2-content {
   @apply absolute top-0 pt-1 pb-2 lg:py-4 animate-marquee2 whitespace-nowrap;
 }
 
 .marquee-text {
-  @apply text-3xl lg:text-4xl m-0 font-bold;
+  @apply text-3xl lg:text-4xl m-0 font-extrabold tracking-tight;
   font-family: "Playfair Display", "sans-serif";
 }

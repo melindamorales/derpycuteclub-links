@@ -9,8 +9,8 @@ module.exports = {
         duggyRightSide: 'url("../pics/duggywave-rightside.png")',
       },
       animation: {
-        marquee: "marquee 25s linear infinite",
-        marquee2: "marquee2 25s linear infinite",
+        marquee: "marquee 60s linear infinite",
+        marquee2: "marquee2 60s linear infinite",
       },
       keyframes: {
         marquee: {
