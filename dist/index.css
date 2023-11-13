@@ -2368,12 +2368,12 @@ h1{
 }
 
 .linktwee-container{
+  position: relative;
   display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 @media (min-width: 1024px){
@@ -2384,6 +2384,7 @@ h1{
 }
 
 .linktwee-box-container{
+  margin-top: 8rem;
   width: 100%;
   max-width: 28rem;
   padding-left: 1rem;
@@ -2437,14 +2438,21 @@ h1{
   }
 }
 
+/* TODO fix this up so it makes more sense */
+
 .duggy-frontview-img{
+  position: absolute;
+  top: 0px;
+  z-index: 50;
   display: none;
   max-height: 10rem;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media not all and (min-width: 1024px){
   .duggy-frontview-img{
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -2476,7 +2484,7 @@ h1{
 }
 
 .marquee1-content{
-  animation: marquee 25s linear infinite;
+  animation: marquee 60s linear infinite;
   white-space: nowrap;
   padding-top: 0.25rem;
   padding-bottom: 0.5rem;
@@ -2505,7 +2513,7 @@ h1{
 }
 
 .marquee2-content{
-  animation: marquee2 25s linear infinite;
+  animation: marquee2 60s linear infinite;
   white-space: nowrap;
   padding-top: 0.25rem;
   padding-bottom: 0.5rem;

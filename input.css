@@ -12,11 +12,11 @@
 }
 
 .linktwee-container {
-  @apply w-full flex justify-center flex-col lg:flex-row lg:justify-between items-center h-full;
+  @apply relative w-full flex flex-col lg:flex-row lg:justify-between items-center h-full;
 }
 
 .linktwee-box-container {
-  @apply w-full max-w-md px-4;
+  @apply w-full max-w-md px-4 mt-32;
 }
 
 .linktwee-box {
@@ -35,8 +35,9 @@
   @apply max-h-96 hidden lg:block;
 }
 
+/* TODO fix this up so it makes more sense */
 .duggy-frontview-img {
-  @apply max-h-40 hidden max-lg:block;
+  @apply max-h-40 hidden max-lg:inline-block absolute top-0 z-50 drop-shadow-lg;
 }
 
 /* marquee */
